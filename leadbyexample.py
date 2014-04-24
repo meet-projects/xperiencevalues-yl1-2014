@@ -8,25 +8,25 @@ if __name__=="__main__":
 
     
     myfont = pygame.font.SysFont("ComicSansMS", 48)
-    label = myfont.render("Equality", 1, (11,46,7))
-     
+    label = myfont.render("Lead by example:", 1, (11,46,7))
     main_screen.blit(label, (5, 20))
 
-    button5=buttonclass.button(155, 70,25,100)
-    button5.draw(main_screen)
-    button5.button_su.fill((205, 92, 92))
+    button7=buttonclass.button(155, 70,15,100)
+    button7.draw(main_screen)
+    button7.button_su.fill((205, 92, 92))
     myfont = pygame.font.SysFont("ComicSansMS", 18)
-    label = myfont.render("Work with people ", 1, (11,206,7))
-    label2 = myfont.render("from another nationality ", 1, (11,206,7))
+    label = myfont.render("Work with  ", 1, (11,206,7))
+    label2 = myfont.render("childern ", 1, (11,206,7))
+    
+    
 
     main_screen.blit(label, (28, 120))
     main_screen.blit(label2, (28, 140))
-    button6=buttonclass.button(150, 70,230,100)
-    button6.draw(main_screen)
-    button6.button_su.fill((205, 92, 92))
+    button8=buttonclass.button(150, 70,230,100)
+    button8.draw(main_screen)
+    button8.button_su.fill((205, 92, 92))
     myfont = pygame.font.SysFont("ComicSansMS", 18)
-    label = myfont.render("Work with old people", 1, (11,206,7))
-
+    label = myfont.render("Travel guide", 1, (11,206,7))
     main_screen.blit(label, (240, 120))
     
     while True: 
@@ -38,3 +38,4 @@ if __name__=="__main__":
                 # print "you clicked me!"
         pygame.display.flip()
     
+
