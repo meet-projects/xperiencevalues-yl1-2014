@@ -19,8 +19,7 @@ def XperienceValues(main_screen):
     valuesbutton.draw(main_screen)
     myfont = pygame.font.SysFont("ComicSansMS",60)
     label = myfont.render("=>", 1, (11,206,7))
-    main_screen.blit(label, (130, 140))
-    # global screenname
+    main_screen.blit(label, (160, 180))
     
     
 
@@ -38,52 +37,99 @@ def values(main_screen):
     label = myfont.render(" Lead by example", 1, (11,206,7))
     main_screen.blit(label, (22, 120))
     global button2
-    button2=buttonclass.button(115, 70,320,100)
+    button2=buttonclass.button(115, 70,300,100)
     button2.draw(main_screen)
     myfont = pygame.font.SysFont("ComicSansMS", 18)
     label = myfont.render("Equality", 1, (11,206,7))
-    main_screen.blit(label, (340, 120))
+    main_screen.blit(label, (330, 120))
     global button3
     button3=buttonclass.button(115, 70,165,240)
     button3.draw(main_screen)
     myfont = pygame.font.SysFont("ComicSansMS", 18)
     label = myfont.render("Team work", 1, (11,206,7))
     main_screen.blit(label, (180, 265))
+    global finishb
+    finishb=buttonclass.button(100,50,320,320)
+    finishb.draw(main_screen)
+    myfont = pygame.font.SysFont("ComicSansMS", 18)
+    label = myfont.render("Finish", 1, (11,206,7))
+    main_screen.blit(label, (340, 340))
 
-###########################################################
-# def example(main_screen):
-#     myfont = pygame.font.SysFont("ComicSansMS", 48)
-#     label = myfont.render("Lead by example:", 1, (11,46,7))  
-#     main_screen.blit(label, (5, 20))
-#     # button3=buttonclass.button(150, 70,20,100)
-#     # # button 
-#     # button=buttonclass.button(115, 70,20,100)
-#     # button.draw(main_screen)
-#     # myfont = pygame.font.SysFont("ComicSansMS", 18)
-#     # label = myfont.render(" Lead by example", 1, (11,206,7))
-#     # main_screen.blit(label, (22, 120))
-# # def equality(main_screen):
-# #     #button 2
-# #     button2=buttonclass.button(100, 70,320,100)
-# #     button2.draw(main_screen)
-# #     myfont = pygame.font.SysFont("ComicSansMS", 18)
-# #     label = myfont.render(" Equality", 1, (11,206,7))
-# #     main_screen.blit(label, (340, 120))
-#     #button 3
-#     button3=buttonclass.button(115, 70,165,240)
-#     button3.draw(main_screen)
-#     button3.button_su.fill((205, 92, 92))
-#     myfont = pygame.font.SysFont("ComicSansMS", 18)
-#     label = myfont.render("Working with children", 1, (11,206,7))
-#     main_screen.blit(label, (28, 120))
-#     button4=buttonclass.button(150, 70,230,100)
-#     button4.draw(main_screen)
-#     button4.button_su.fill((205, 92, 92))
-#     myfont = pygame.font.SysFont("ComicSansMS", 18)
-#     label = myfont.render("Travel guide", 1, (11,206,7))
-#     label = myfont.render(" Team work", 1, (11,206,7))
-#     main_screen.blit(label, (185, 260))
-#     screenname=""
+def equality(main_screen):
+    myfont = pygame.font.SysFont("ComicSansMS", 48)
+    label = myfont.render("Equality", 1, (11,46,7))
+    main_screen.blit(label, (5, 20))
+    global button5
+    button5=buttonclass.button(155, 70,25,100)
+    button5.draw(main_screen)
+    button5.button_su.fill((205, 92, 92))
+    myfont = pygame.font.SysFont("ComicSansMS", 18)
+    label = myfont.render("Work with people ", 1, (11,206,7))
+    label2 = myfont.render("from another nationality ", 1, (11,206,7))
+    main_screen.blit(label, (28, 120))
+    main_screen.blit(label2, (28, 140))
+    label3=myfont.render("50$",1,(11,206,7))
+    main_screen.blit(label3, (35, 180))
+    global button6
+    button6=buttonclass.button(150, 70,230,100)
+    button6.draw(main_screen)
+    button6.button_su.fill((205, 92, 92))
+    myfont = pygame.font.SysFont("ComicSansMS", 18)
+    label = myfont.render("Work with old people", 1, (11,206,7))
+    main_screen.blit(label, (240, 120))
+    label3=myfont.render("50$",1,(11,206,7))
+    main_screen.blit(label3, (250, 180))
+
+def Teamwork(main_screen):
+    myfont = pygame.font.SysFont("ComicSansMS", 48)
+    label = myfont.render("Lead by example", 1, (11,46,7))
+    main_screen.blit(label, (5, 20))
+    global button9
+    button9=buttonclass.button(155, 70,15,100)
+    button9.draw(main_screen)
+    button9.button_su.fill((205, 92, 92))
+    myfont = pygame.font.SysFont("ComicSansMS", 18)
+    label = myfont.render("Work with  ", 1, (11,206,7))
+    label2 = myfont.render("childern ", 1, (11,206,7))
+    main_screen.blit(label, (28, 120))
+    main_screen.blit(label2, (28, 140))
+    label3 = myfont.render("100$", 1, (11,206,7))
+    main_screen.blit(label3, (35, 180))
+    global button10
+    button10=buttonclass.button(150, 70,230,100)
+    button10.draw(main_screen)
+    button10.button_su.fill((205, 92, 92))
+    myfont = pygame.font.SysFont("ComicSansMS", 18)
+    label = myfont.render("Travel guide", 1, (11,206,7))
+    main_screen.blit(label, (240, 120))
+    label3 = myfont.render("100$", 1, (11,206,7))
+    main_screen.blit(label3, (260, 180))
+
+def leadbyexample(main_screen):
+    myfont = pygame.font.SysFont("ComicSansMS", 48)
+    label = myfont.render("Lead by example:", 1, (11,46,7))
+    main_screen.blit(label, (5, 20))
+    global button7
+    button7=buttonclass.button(155, 70,15,100)
+    button7.draw(main_screen)
+    button7.button_su.fill((205, 92, 92))
+    myfont = pygame.font.SysFont("ComicSansMS", 18)
+    label = myfont.render("Work with  ", 1, (11,206,7))
+    label2 = myfont.render("childern ", 1, (11,206,7))
+    main_screen.blit(label, (28, 120))
+    main_screen.blit(label2, (28, 140))
+    label3 = myfont.render("75$", 1, (11,206,7))
+    main_screen.blit(label3, (35, 180))
+    global button8
+    button8=buttonclass.button(150, 70,230,100)
+    button8.draw(main_screen)
+    button8.button_su.fill((205, 92, 92))
+    myfont = pygame.font.SysFont("ComicSansMS", 18)
+    label = myfont.render("Travel guide", 1, (11,206,7))
+    main_screen.blit(label, (240, 120))
+    label3 = myfont.render("75$", 1, (11,206,7))
+    main_screen.blit(label3, (260, 180))
+
 
 if __name__=="__main__":
     pygame.init()
@@ -91,14 +137,11 @@ if __name__=="__main__":
     main_screen.fill((255,255,255))
     XperienceValues(main_screen)
     screenname="main"
-
-    # global myfont
-    # label = myfont.render("X", 1, (11,46,7))
-    # main_screen.blit(label, (260, 120))
     global backbutton
     backbutton=buttonclass.button(50,50,15,340)
 
-    price = []
+    price = 0
+
 
     while True: 
         ev = pygame.event.poll()
@@ -110,39 +153,55 @@ if __name__=="__main__":
                 values(main_screen)
             if screenname=="mainvalues":
                 if button.button_rec.collidepoint(x, y):
-                    main_screen.fill((0,0,0))
-                    myfont = pygame.font.SysFont("ComicSansMS", 30)
-                    label = myfont.render("You Clicked Button 1", 1, (11,46,7))
-                    main_screen.blit(label, (120, 20))
-                    screenname="example"
+                    main_screen.fill((255,255,255))
                     backbutton=buttonclass.button(50,50,15,340)
                     backbutton.draw(main_screen)
                     myfont = pygame.font.SysFont("ComicSansMS", 18)
                     label = myfont.render(" Back", 1, (11,206,7))
                     main_screen.blit(label, (20, 350))
+                    leadbyexample(main_screen)
+                    screenname="example"
                 if button2.button_rec.collidepoint(x, y):
                     main_screen.fill((255,255,255))
                     myfont = pygame.font.SysFont("ComicSansMS", 30)
-                    label = myfont.render("You Clicked Button 2", 1, (11,46,7))
-                    main_screen.blit(label, (120, 20))
+                    backbutton.draw(main_screen)
+                    myfont = pygame.font.SysFont("ComicSansMS", 18)
+                    label = myfont.render(" Back", 1, (11,206,7))
+                    main_screen.blit(label, (20, 350))
+                    equality(main_screen)
                     screenname="Equality"
-                    # backbutton=buttonclass.button(50,50,15,340)
-                    backbutton.draw(main_screen)
-                    myfont = pygame.font.SysFont("ComicSansMS", 18)
-                    label = myfont.render(" Back", 1, (11,206,7))
-                    main_screen.blit(label, (20, 350))
                 if button3.button_rec.collidepoint(x, y):
-                    main_screen.fill((50,50,50))
+                    main_screen.fill((250,250,250))
                     myfont = pygame.font.SysFont("ComicSansMS", 30)
-                    label = myfont.render("You Clicked Button 3", 1, (11,46,7))
-                    main_screen.blit(label, (120, 20))
-                    screenname="Team work"
-                    # backbutton=buttonclass.button(50,50,15,340)
                     backbutton.draw(main_screen)
                     myfont = pygame.font.SysFont("ComicSansMS", 18)
                     label = myfont.render(" Back", 1, (11,206,7))
                     main_screen.blit(label, (20, 350))
-            if screenname=="example" or screenname=="Team work" or screenname=="Equality":
+                    Teamwork(main_screen)
+                    screenname="Team work"
+                if finishb.button_rec.collidepoint(x,y):
+                    main_screen.fill((250,250,250))
+                    myfont = pygame.font.SysFont("ComicSansMS", 80)
+                    label = myfont.render("Price: "+str(price)+"$", 1, (11,206,7))
+                    main_screen.blit(label, (75, 150))
+            elif screenname=="example" or screenname=="Team work" or screenname=="Equality":
+                if screenname=="Equality":
+                    if button5.button_rec.collidepoint(x,y) or button6.button_rec.collidepoint(x,y):
+                        price+=50
+                        print price
+                        print screenname
+                if screenname=="example":
+                    if button7.button_rec.collidepoint(x,y) or button8.button_rec.collidepoint(x,y):
+                        price+=75
+                        print price
+                        print screenname
+                if screenname=="Team work":
+                    if button9.button_rec.collidepoint(x,y) or button10.button_rec.collidepoint(x,y):
+                        price+=100
+                        print price  
+                        print screenname    
+
+
                 if backbutton.button_rec.collidepoint(x, y):
                     values(main_screen)
                     screenname="mainvalues"
